@@ -9,7 +9,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <script>
     console.log("/feedback/#/"+window.location.search);
-    location.href = "/feedback/#/"+window.location.search;
+    if(window.location.hash.trim().length == 0){
+      location.href = "/feedback/#/"+window.location.search;
+    }
   </script>
 <link rel="stylesheet" href="styles.3646b57edf8fbe339856.css"></head>
 <body>
